@@ -1,0 +1,54 @@
+.ab{
+    letter-spacing: 4px;
+   text-align: center;
+}
+.about{
+    width:100%;
+ 
+}
+
+.about_pic{
+    /* width: 50%;
+    display: inline-block;
+    
+    padding-top: 35%;
+    margin-left: 6%;
+    background-repeat: no-repeat;
+    background-position:left; */
+    display: inline-block;
+    /* background-image: url("../images/about.png"); */
+    padding-top: 25%;
+    margin-left: 6%;
+    background-color: aqua;
+}
+.about_text{
+    /* width: 50%;
+    display: inline-block;
+    text-align: right;
+    margin-top: 10%; */
+    display: inline-block;
+    padding-left: 10%;
+   
+    
+}
+
+
+.about_footer_section{  
+width: 90%;
+margin-left: 5%;
+float: left;
+background-color: #97bcec;
+height: auto;
+padding-top: 80px;
+padding-bottom: 50px;
+margin-top: 60px;
+}
+
+.footer_text{
+    color: #ffffff;
+}
+.footer_pic{
+    /* background-image: url("../images/about_footer.jpg"); */
+    width: 100px;
+    height: 100px;
+} 

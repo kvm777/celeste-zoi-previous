@@ -1,0 +1,93 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bfbfbf;
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  margin-bottom: 40px; /* Space between heading and form */
+  text-align: center;
+}
+
+.contact form {
+  width: 300%;
+  max-width: 800px; /* Limit form width */
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.input-group {
+  flex: 1;
+  position: relative;
+  margin-right: 20px; /* Space between input groups */
+}
+
+.input-group:last-child {
+  margin-right: 0; /* Remove right margin for the last input in the row */
+}
+
+.input-group input,
+.input-group textarea,
+.dropdown-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 00px;
+  /* box-sizing: border-box; */
+  color: #000; /* Text color */
+}
+
+.input-group label {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 14px;
+  color: rgb(0, 8, 11); /* Label color */
+  pointer-events: none;
+}
+
+.dropdown-container {
+  flex: 1;
+}
+
+.contact-row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .contact-row,
+  .contact-row1 {
+    flex-direction: column;
+  }
+
+  .input-group {
+    margin-right: 0;
+    margin-bottom: 20px; /* Space between input groups on small screens */
+  }
+}

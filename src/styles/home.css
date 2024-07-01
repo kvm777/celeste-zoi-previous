@@ -1,0 +1,911 @@
+/* Video css section */
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  max-width: 1600px; /* Adjust max-width as needed */
+}
+
+.video-player {
+  width: 100%;
+  height: 80%; /* Adjust height as needed */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for overlay */
+}
+
+.play-icon {
+  fill: white;
+  width: 50px;
+  height: 50px;
+}
+
+.play-icon polygon {
+  fill: white;
+}
+
+/* Hover effect for play overlay */
+.play-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Darken overlay on hover */
+}
+
+/* About css section */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.skyblue-background5 {
+  background-color: #d6e8e8;
+  width: 75%;
+  max-height: 550px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container5 {
+  max-width: 1200px;
+  width: 100%;
+  height: 90.7%;
+}
+
+.row5 {
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  flex: 1 1 50%;
+  margin-bottom: 20px;
+}
+
+.image-container5 {
+  text-align: center;
+}
+
+.centered-image5 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h5, p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.centered-text5 {
+  text-align: left;
+}
+
+.load-more-button5 {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button5:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .skyblue-background5 {
+    width: 90%; /* Adjust the width for mobile */
+    margin: 10px 0; /* Adjust margin between sections for mobile */
+  }
+
+  .row5 {
+    flex-direction: column; /* Stack columns vertically on mobile */
+    align-items: center;
+  }
+
+  .col {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .centered-text5 {
+    text-align: center; /* Center align text on mobile */
+  }
+}
+
+/* Video Container Styles */
+.video-container {
+  max-width: 90%; /* Adjust the max-width as per your design */
+  margin: 0 auto; /* Center the video container horizontally */
+  padding: 20px; /* Add padding around the video */
+}
+
+/* Style for the video element */
+.video-container video {
+  width: 100%; /* Ensure the video takes up full width of its container */
+  display: block; /* Make sure the video is block-level */
+  border-radius: 8px; /* Optional: Add rounded corners to the video */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Our services css section */
+
+#service {
+  padding: 20px 0;
+  max-width: 70%;
+  margin: 0 auto; /* Center the section horizontally */
+  height: 550px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  background-color: #d6e8e8;
+  border-radius: 0px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #service {
+    max-width: 90%; 
+  }
+  .row {
+    max-width: 90%; 
+  }
+}
+
+/* Center align text within container */
+
+
+
+/* our services */
+/* Container Styles */
+#service .container {
+  text-align: center;
+  max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+  padding: 0 15px; /* Add padding for responsive adjustments */
+}
+
+.container1 {
+  text-align: center; /* Center align text */
+  padding: 3rem 0; /* Add padding around the container */
+}
+
+.text {
+  text-align: center;
+  font-size: medium;
+}
+
+/* Image Styles */
+#service img {
+  width: 100%; /* Ensure the image takes up full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure the image height doesn't exceed its container height */
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Card Container Styles */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow cards to wrap to next line */
+  gap: 0rem; /* Remove gap between cards */
+  margin-top: 0rem; /* Add margin between heading and cards */
+}
+
+/* Card Styles */
+.card {
+  position: relative;
+  overflow: hidden; /* Hide overflow for zoom effect */
+  width: 200px; /* Adjust card width as needed */
+  margin: 0rem; /* Adjust margin between cards */
+}
+
+.card:hover .card-img {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+/* Overlay Styles */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* Initially show overlay */
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+.card:hover .card-overlay {
+  opacity: 0; /* Hide overlay on hover */
+}
+
+/* Rounded Corners for First and Last Card */
+.card:first-child, .card:last-child {
+  border-radius: 0px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 1rem); /* Two cards per row */
+    margin: 0.5rem;
+  }
+
+  .card:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 1rem); /* Single card per row */
+    margin: 0.5rem;
+  }
+
+  .card:first-child, .card:last-child {
+    border-radius: 10px; /* Rounded corners for single card per row */
+  }
+}
+
+
+/* Pricing css section */
+
+.container8 {
+  text-align: center; /* Center align text within the container */
+  padding: 20px; /* Optional: Add padding around the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.text8 {
+  text-align: center; /* Center align text within the text container */
+  margin: 0 auto; /* Center the text container horizontally */
+  padding: 10px; /* Optional: Add padding around the text container */
+}
+
+h1 {
+  font-size: 2em; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+h7 {
+  display: block; /* Ensure h7 acts as a block element */
+  font-size: 1.2em; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+}
+
+
+
+.card-overlay h2,
+.card-overlay p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #fff;
+  padding: 1rem;
+}
+
+.card-container1 {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Make sure the container takes full width */
+  max-width: 1000px; /* Max width to ensure it doesn't stretch too much */
+  align-items: flex-start; /* Align items at the start */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  gap: 0rem; /* Remove gap between cards */
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center; /* Center align text */
+  padding: 4rem 0;
+}
+
+.card1 {
+  flex: 1;
+  min-width: 250px; /* Adjust based on your design needs */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  background-color: navy; /* Set the background color to navy */
+  color: white; /* Set the text color to white */
+  padding: 10px;
+  border-radius: 4px;
+}
+
+h6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-align: left; /* Align text to the left within the flex container */
+}
+
+.text {
+  float: right;
+  font-size: 16px;
+  margin-left: 10px; /* Add some space between the text and the price */
+  color: #555;
+}
+
+p {
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+  text-align: left;
+  
+}
+
+.card-content1 {
+  text-align: center;
+  padding: 0;
+}
+
+.card-footer1 {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.container2 {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.text {
+  text-align: center;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Subscribe container */
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscribe-container h1 {
+  margin-bottom: 40px; /* Space between heading and form */
+}
+
+.subscribe-form {
+  display: flex;
+  width: 100%; /* Make form take full width of the container */
+  max-width: 800px; /* Optional: Max width of the form */
+  justify-content: space-between; /* Space between input and button */
+ 
+}
+
+.subscribe-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cdcbcb;
+  border-radius: 5px;
+  width: 140%; /* Adjust width as needed */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  margin-right: 10px; /* Space between input field and button */
+}
+
+.subscribe-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #463eb4;
+  color: rgb(10, 1, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%; /* Adjust width as needed */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.subscribe-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .subscribe-container {
+    padding: 15px;
+  }
+
+  .subscribe-form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .subscribe-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-container {
+    padding: 10px;
+  }
+
+
+
+
+
+
+  .subscribe-form {
+    flex-direction: column; /* Stack input and button vertically */
+    max-width: 100%; /* Ensure the form takes full width on small screens */
+  }
+
+  .subscribe-form input {
+    padding: 6px;
+    font-size: 12px;
+    width: 100%;
+    margin-right: 0; /* Remove margin when stacked */
+    margin-bottom: 10px; /* Add margin between input and button */
+  }
+
+  .subscribe-form button {
+    padding: 6px;
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+.dropdown-container {
+  max-width: 300px;
+  margin: 20px auto;
+
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.dropdown-select option[disabled] {
+  display: none;
+}
+
+.dropdown-select option:first-child {
+  color: #0b7e3f;
+}
+
+
+.slider-container {
+  width: 80%; /* Set the container width to 80% of its parent element */
+  max-width: 1000px; /* Maximum width for the container */
+  max-height: 500px; /* Maximum height for the container */
+  margin: 0 auto; /* Center the container horizontally */
+ /* Use flexbox to control spacing between child elements */
+  justify-content: space-between; /* Distribute child elements with space between them */
+  align-items: center; /* Center child elements vertically */
+}
+
+
+
+/* testnomials */
+
+
+
+
+.testimonials4 {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.testimonials4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Adjust this to fit your container's height */
+}
+
+.testimonials4 h2 {
+  margin-bottom: 5px;
+}
+
+.testimonials4 h8 {
+  font-size: 1.2em;
+  color: #777;
+  /* margin-bottom: 20px;
+  margin: 40px; */
+}
+
+.testimonials4 p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+
+
+.testimonials44 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.testimonials44 h2 {
+  margin-bottom: 5px;
+}
+
+.testimonials44 h8 {
+  font-size: 1.2em;
+  color: #777;
+  display: block; /* Since h8 is not a standard element, treat it like a block element */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.testimonials44 p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #777;
+  max-width: 900px; /* Optional: Set a max width for better readability */
+  margin: 0; /* Reset margin to ensure proper centering */
+}
+.gap {
+  padding: 25px; /* Adjust the padding as needed */
+}
+
+.slider-container4 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px; 
+  /* Increased max-width for more space */
+}
+
+.testimonial-card4 {
+  padding: 20px;
+  border: 1px solid #ddd;
+  
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  flex: 1 1 calc(33.333% - 40px);
+  box-sizing: border-box;
+ margin-top: 37px;
+}
+
+.testimonial-card4 .avatar {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.testimonial-card4 .avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial-card4 .card-body6 {
+  margin-top: 40px;
+  
+}
+
+.testimonial-card4 p {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.testimonial-card4 h6 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center; /* Center-align text within h6 */
+}
+
+.testimonial-card4 h6 p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #999;
+  font-weight: normal;
+  text-align: center; /* Center-align text within h6 p */
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-next {
+  right: -35px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: blue;
+}
+
+.slick-dots li.slick-active button:before {
+  color: blue;
+}
+
+@media (max-width: 1200px) {
+  .testimonial-card4 {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card4 {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .testimonial-card4 .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .slick-prev, .slick-next {
+    display: none;
+  }
+}
+
+
+.centered-image55 {
+  width: 100px; /* Set your desired width */
+  height: 100px; /* Set your desired height */
+  vertical-align: middle; /* Aligns the image vertically with the text */
+  margin-right: 150px; /* Adds some space between the image and the text */
+}
+
+
+
+/* events */
+
+
+.events {
+  padding: 20px;
+}
+
+.skyblue-background9 {
+  background-color: skyblue;
+  padding: 20px;
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.container9 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.row9 {
+  display: flex;
+  width: 100%;
+  align-items: flex-start; /* Aligns items to the top */
+  flex-wrap: wrap; /* Ensures the layout adjusts on smaller screens */
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+  text-align: center; /* Ensures all columns have centered text by default */
+}
+
+.left-image {
+  text-align: left; /* Aligns the image to the left */
+}
+
+.text-center9 {
+  text-align: center;
+}
+
+.centered-image9 {
+  max-width: 100%; 
+  height: auto;
+}
+
+.bottom-right-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+.centered-image10 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row9 {
+    flex-direction: column; /* Stacks the columns on top of each other on small screens */
+  }
+
+  .bottom-right-image {
+    position: static; /* Resets the position on small screens */
+    text-align: right; /* Aligns the image to the right */
+    margin-top: 20px;
+  }
+
+  .centered-image10 {
+    display: inline-block;
+  }
+}
+
+/* Pramotion */
+
+.latest-news {
+  padding: 20px;
+}
+
+.latest-news h1,
+.latest-news h2 {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  padding: 20px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  color: rgb(16, 37, 1);
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.text15 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text15 .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text15 .blog-no {
+  font-weight: bold;
+}
+
+.text15 .date {
+  font-style: italic;
+}
+
+.text15 p {
+  margin: 10px 0 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  .text15 {
+    align-items: center;
+  }
+
+  .text15 .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}

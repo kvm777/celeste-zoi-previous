@@ -1,0 +1,5 @@
+@media screen and (max-width: 992px) {
+    .container .row .col-md-6 h2 {
+        font-size: 2rem;
+    }
+}
